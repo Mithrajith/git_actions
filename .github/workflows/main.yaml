@@ -1,11 +1,12 @@
-# File: .github/workflows/hello.yml
-name: Hello World
+name: Basic Commands
 
-on: [push]  # triggers when you push to GitHub
+on: [push]
 
 jobs:
-  greet:
+  basics:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "👋 Hello from GitHub Actions!"
+      - name: Print working directory
+        run: pwd
+      - name: List files
+        run: ls -la
