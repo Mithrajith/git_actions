@@ -1,1 +1,3 @@
-print("Streack 4")
+class User:
+    def __init__(self):
+        ...
